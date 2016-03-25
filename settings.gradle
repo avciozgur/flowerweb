@@ -18,5 +18,5 @@ include 'services:webservice'
 
 rootProject.name = 'flowerweb'
 
-//include ':flower'
-//project(':flower').projectDir = new File(settingsDir, '../flower')
+include ':flower'
+project(':flower').projectDir = new File(settingsDir, '../flower')
