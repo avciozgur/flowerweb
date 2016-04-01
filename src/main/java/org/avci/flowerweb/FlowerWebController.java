@@ -1,4 +1,4 @@
-package org.avci.flower.web;
+package org.avci.flowerweb;
 
 import java.util.Map;
 

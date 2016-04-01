@@ -14,19 +14,19 @@ dependencies {
  
  	compile 'ch.qos.logback:logback-classic:1.1.3'
 	compile 'org.springframework:spring-webmvc:4.2.5.RELEASE'
-	compile 'javax.servlet:servlet-api:2.5'
+	compile 'javax.servlet:javax.servlet-api:3.1.0'
 	compile 'jstl:jstl:1.2'
 	compile project(':flower')
 }
 
 // Embeded Jetty for testing
 jettyRun{
-	contextPath = "flower"
+	contextPath = "flowerweb"
 	httpPort = 8080
 }
 
 jettyRunWar{
-	contextPath = "flower"
+	contextPath = "flowerweb"
 	httpPort = 8080
 }
 
@@ -37,7 +37,7 @@ eclipse {
     component {
       
       //define context path, default to project folder name
-      contextPath = 'flower'
+      contextPath = 'flowerweb'
       
     }
     
